@@ -5,7 +5,7 @@ class HTMLNode():
                  children: list[HTMLNode] = None,
                  props: dict = None):
         self.tag = tag
-        self.vlaue = value
+        self.value = value
         self.children = children
         self.props = props
 
@@ -14,7 +14,7 @@ class HTMLNode():
 
     def props_to_html(self):
         prop_string = ""
-        for k, v in self.props.items:
+        for k, v in self.props.items():
             prop_string += f' {k}="{v}"'
 
         return prop_string
